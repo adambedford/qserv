@@ -1,0 +1,13 @@
+= simple_form_for(@property) do |f|
+  = f.error_notification
+
+  .form-inputs
+    = f.input :name
+    = f.input :address1
+    = f.input :address2
+    = f.input :city
+    = f.input :state
+    = f.input :zip
+
+  .form-actions
+    = f.button :submit
