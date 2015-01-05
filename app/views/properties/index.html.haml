@@ -9,8 +9,8 @@
     %thead
       %tr
         %th Name
-        %th Address1
-        %th Address2
+        %th Address 1
+        %th Address 2
         %th City
         %th State
         %th Zip
@@ -27,6 +27,12 @@
           %td= property.city
           %td= property.state
           %td= property.zip
-          %td= link_to 'Show', property
-          %td= link_to 'Edit', edit_property_path(property)
-          %td= link_to 'Destroy', property, :data => { confirm: 'Are you sure?' }, :method => :delete
+          %td
+            %span.glyphicon.glyphicon-eye-open
+            = link_to 'Show', property
+          %td
+            %span.glyphicon.glyphicon-edit
+            = link_to 'Edit', edit_property_path(property)
+          %td
+            %span.glyphicon.glyphicon-remove
+            = link_to 'Destroy', property, :data => { confirm: 'Are you sure?' }, :method => :delete

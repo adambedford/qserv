@@ -34,6 +34,7 @@ gem 'bootstrap-sass'
 gem 'bootstrap-generators'
 gem 'autoprefixer-rails'
 gem 'bootswatch-rails'
+gem 'font-awesome-sass', '~> 4.2.0'
 
 gem 'upmin-admin'
 

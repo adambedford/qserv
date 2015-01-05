@@ -14,14 +14,18 @@
  *= require_self
  */
 
-// Import Bootswatch Superhero variables
-@import "bootswatch/superhero/variables";
+// Import Bootswatch  variables
+@import "bootswatch/lumen/variables";
 
-@import "bootstrap-sprockets";
+// @import "bootstrap-sprockets";
 @import "bootstrap";
 
 body { padding-top: 60px; }
 
-// Import the Superhero styles
-@import "bootswatch/superhero/bootswatch"
+// Import the Bootswatch styles
+// @import "bootswatch/lumen/bootswatch"
+
+// Import Font Awesome
+@import "font-awesome-sprockets";
+@import "font-awesome";
 
